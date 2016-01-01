@@ -1,0 +1,13 @@
+{
+  "name": "template",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/{youraccount}/SARAH-template.git"
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+
+  }
+}
