@@ -1,9 +1,3 @@
-exports.action = function(data, next){
-  
-  info('Appel du plugin', data);
-  
-  next({ "tts" : "Bonjour, je m'appel SARAH" });
-}
 
 exports.action = function(data, next){
   
@@ -24,6 +18,14 @@ exports.action = function(data, next){
 exports.cron = function(next){
   // Called by SARAH to perform cron action
   info('Plugin template CRON is called ...');
+}
+
+exports.socket = function(io, socket){
+  // Register to WebSocket
+  // socket.on('template', function(msg){
+  //   info('receiving',msg);
+  //   io.emit('template', 'hello');
+  // });
 }
 
 // ------------------------------------------
